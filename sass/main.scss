@@ -1,0 +1,26 @@
+$Mobile: 375px;
+$Tablet: 992px;
+$Desktop: 1440px;
+$bp:810px;
+$border-radius:.8em;
+
+@import './utils/color';
+@import './utils/typography';
+@import './utils/buttons';
+@import './utils/mixin';
+
+@import './section';
+
+
+*{@include reset();}
+
+body{
+  font-family: $font-family-Manrope;
+  font-size: $body-font-size;
+  position: relative;
+  height: 100vh;  
+}
+
+
+.hidden{display: none;}
+@import './footer';

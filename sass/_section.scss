@@ -1,0 +1,27 @@
+@import './parts/left';
+@import './parts/right';
+
+// main section
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: $light-gray;
+  .container{
+    max-width: 80vw;
+    background: #fff;
+    border-radius: $border-radius;
+    box-shadow: rgba($dark-blue, 0.09) 0px 3px 20px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width:$bp) {
+      flex-direction: row;
+    }
+    @media (min-width:1020px) {
+      
+      max-width: 1020px;
+    }
+  }
+}

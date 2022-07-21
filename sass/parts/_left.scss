@@ -1,0 +1,20 @@
+.image{
+  img{
+    border-radius: 1em 1em 0 0;
+    @media (min-width:$bp) {
+      border-radius: 1em 0 0em 1em ;
+      min-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      
+    }
+    @media (min-width:1020px) {
+      max-height: 260px;
+
+    }
+  }
+  @media (min-width:$bp) {
+    
+    
+  }
+}

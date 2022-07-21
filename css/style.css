@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+.btn {
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+.image img {
+  border-radius: 1em 1em 0 0;
+}
+@media (min-width: 810px) {
+  .image img {
+    border-radius: 1em 0 0em 1em;
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1020px) {
+  .image img {
+    max-height: 260px;
+  }
+}
+@media (min-width: 1020px) {
+  .description {
+    max-width: 560px;
+  }
+}
+.description h2 {
+  padding: 2em 2rem 1rem;
+  color: #48556a;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+.description p.description__body {
+  padding: 0 2rem;
+  font-size: 0.8rem;
+  color: #9eafc2;
+}
+.description .author-social {
+  margin-top: 2em;
+  border-radius: 0 0 1em 1em;
+  padding: 0rem;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+.description .author-social .author-social__author {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+}
+.description .author-social .author-social__author .image {
+  max-width: 20%;
+}
+.description .author-social .author-social__author img {
+  border-radius: 50%;
+}
+.description .author-social .author-social__author .name-date .name-date__name {
+  color: #48556a;
+  font-weight: bold;
+}
+.description .author-social .author-social__author .name-date .name-date__date {
+  color: #9eafc2;
+  font-weight: bold;
+  margin-top: 0.25em;
+}
+.description .author-social .author-social__social {
+  display: none;
+  padding: 1.65rem 1rem;
+  border-radius: 0 0 0 1em;
+  flex: 1;
+}
+.description .author-social .author-social__social span, .description .author-social .author-social__social img {
+  display: inline-block;
+}
+.description .author-social .share {
+  padding: 1rem 0.9rem;
+  border-radius: 0 0 1em 0;
+}
+@media (min-width: 992px) {
+  .description .author-social .share {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+.description .author-social .share-btn {
+  display: flex;
+  padding: 0.98em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.description .author-social .share-btn img {
+  min-width: 15px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.bg-color {
+  background-color: #48556a;
+  color: #fff;
+}
+
+.share-desktop {
+  background-color: #48556a;
+  color: #fff;
+  display: flex !important;
+  position: absolute !important;
+  top: -70% !important;
+  right: -2.5rem !important;
+  padding: 1.5em 2em !important;
+  gap: 2em !important;
+  border-radius: 10px !important;
+  position: relative;
+}
+
+.share-desktop::after {
+  content: "";
+  position: absolute;
+  bottom: -65%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px;
+  border-color: #48556a transparent transparent transparent;
+  border-style: solid;
+}
+
+.share-btn-desktop {
+  padding: 0.2em !important;
+  border-radius: 0 0 0em 0 !important;
+  background-color: #fff !important;
+}
+
+.socail-links {
+  margin-right: 1em;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf2f8;
+}
+section .container {
+  max-width: 80vw;
+  background: #fff;
+  border-radius: 0.8em;
+  box-shadow: rgba(72, 85, 106, 0.09) 0px 3px 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 810px) {
+  section .container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1020px) {
+  section .container {
+    max-width: 1020px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+* a {
+  text-decoration: none;
+  color: #fff;
+}
+* img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  position: relative;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  box-sizing: border-box;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 1rem;
+  left: 1rem;
+  background: hsl(180deg, 62%, 55%);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  clip-path: circle(7.5% at 6.5% 45%);
+  transition: all 0.3s;
+}
+footer:hover {
+  clip-path: circle(100%);
+  background-color: #363745;
+}
+@media (max-width: 992px) {
+  footer {
+    background-color: #363745;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    border-radius: 0;
+    clip-path: circle(100%);
+  }
+}
+footer a {
+  color: hsl(0deg, 78%, 62%);
+}
+
+/*# sourceMappingURL=style.css.map */

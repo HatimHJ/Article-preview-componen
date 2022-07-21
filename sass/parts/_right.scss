@@ -1,0 +1,130 @@
+.description{
+  @media (min-width:1020px) {
+    max-width: 560px;
+
+  }
+  h2{
+    padding: 2em 2rem 1rem;
+    color: $dark-blue;
+    font-size: .95rem;
+    font-weight: bold;
+  }
+  p.description__body{
+    padding: 0 2rem ;
+    font-size: .80rem;
+    color: $grayish-blue;
+  }
+  .author-social{
+    margin-top: 2em;
+    border-radius: 0 0 1em 1em;
+    padding: 0rem ;
+
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    
+    .author-social__author{
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      padding: 1em;
+      .image{
+        max-width: 20%;
+      }
+      img{
+        border-radius: 50%;
+      }
+      .name-date{
+        .name-date__name{
+          color: $dark-blue;
+          font-weight: bold;
+        }
+        .name-date__date{
+          color: $grayish-blue;
+          font-weight: bold;
+          margin-top: .25em;
+        }
+      }
+    }
+    .author-social__social{
+      
+      display: none;
+      padding: 1.65rem 1rem ;
+      border-radius: 0 0 0 1em ;
+      flex: 1;
+      span, img{
+        display: inline-block;
+
+      }
+      
+      
+    }
+    .share{
+      
+      padding: 1rem .90rem ;
+      border-radius: 0 0 1em 0  ;
+      @media (min-width:992px) {
+        background-color: rgba(0, 255, 255, 0);
+      }
+      
+    }
+    .share-btn{
+      display: flex;
+      padding: .98em;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      img{
+        min-width: 15px;
+      }
+    }
+  }
+}
+
+.show{
+  display: block;
+}
+.hide{
+  display: none !important;
+}
+
+.bg-color {
+  background-color: $dark-blue;
+  color: #fff;
+}
+
+.share-desktop{
+  background-color: #48556a;
+  color: #fff;
+  display: flex !important;
+  position: absolute !important;
+  top: -70% !important;
+  right: -2.5rem !important;
+  padding: 1.5em 2em !important;
+  gap: 2em !important;
+  border-radius: 10px !important;
+  position: relative;
+}
+
+.share-desktop::after{
+  content: "";
+  position: absolute;
+  bottom: -65%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px;
+  border-color: #48556a transparent transparent transparent;
+  border-style: solid;
+}
+
+.share-btn-desktop{
+  padding: .2em !important;
+  // padding: 1rem .90rem ;
+  border-radius: 0 0 0em 0 !important  ;
+  background-color: #fff !important;
+}
+
+.socail-links{
+  margin-right: 1em;
+}
